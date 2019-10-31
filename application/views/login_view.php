@@ -36,6 +36,8 @@
                 <form action="<?=base_url()?>index.php/login/proses_login" id="sign_in" method="POST">
                     <div class="msg">Sign in to start your session</div>
                     
+                    <div class="alert alert-warning"><?= $this->session->flashdata('pesan');?></div>
+
                     <div class="input-group">
                         <span class="input-group-addon">
                             <i class="material-icons">person</i>
@@ -52,7 +54,7 @@
                             <input type="password" class="form-control" name="password" placeholder="Password">
                         </div>
                     </div>
-                    <div class="alert alert-warning"><?= $this->session->flashdata('pesan');?></div>
+                   
                     <div class="row">
                         <div class="col-xs-8 p-t-5">
                         </div>
